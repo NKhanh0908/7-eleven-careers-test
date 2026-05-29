@@ -1,0 +1,41 @@
+# Ignore frontend since we only want to push backend & agent configurations
+frontend/
+
+# Environment / Secrets — NEVER commit
+.env
+.env.dev
+.env.prod
+.env.local
+*.env
+
+# Java / Maven build outputs
+backend/seven_eleven/target/
+*.jar
+*.war
+*.ear
+*.class
+
+# Frontend build outputs
+node_modules/
+dist/
+.next/
+build/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+*.suo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Docker volumes / DB data
+postgres_data/
+backend/seven_eleven/uploads/
+
+# Test reports
+surefire-reports/
